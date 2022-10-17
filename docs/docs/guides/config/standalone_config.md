@@ -1,3 +1,0 @@
----
-title: Starwhale Instance configurations
----

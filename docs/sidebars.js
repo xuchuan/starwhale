@@ -1,7 +1,16 @@
 module.exports = {
     mainSidebar: [
+        "what-is-starwhale",
         {
-            "Quickstart": ["quickstart/standalone", "quickstart/on-premises"],
+            "Getting started with Starwhale": [
+                "getting-started/standalone",
+                {
+                    "Getting started with Starwhale Server": [
+                        "getting-started/server/quick-install"
+                    ]
+                },
+                "getting-started/cloud"
+            ],
             "Tutorials": [
                 "tutorials/pytorch",
                 "tutorials/mnist",
@@ -16,48 +25,37 @@ module.exports = {
                 "fundamentals/arch"
             ],
             "Guides": [
+                {
+                    "Starwhale Command Line Interface (SWCLI) User Guide": [
+                        "guides/swcli/installation"
+                    ],
+                    "Starwhale Server User Guide": [
+                        ""
+                    ]
+                },
+                "guides/server",
                 "guides/uri",
                 "guides/dataset",
                 "guides/runtime",
                 "guides/model",
                 "guides/evaluation",
-                {
-                    type: 'category',
-                    label: "Installation",
-                    collapsed: true,
-                    items: [
-                        "guides/install/standalone",
-                        "guides/install/helm-charts",
-                        "guides/install/docker",
-                    ]
-                },
-                {
-                    type: 'category',
-                    label: "Configurations",
-                    collapsed: true,
-                    items: [
-                        "guides/config/standalone_config",
-                        "guides/config/swignore",
-                    ]
-                },
                 "guides/faq",
             ],
             "Reference": {
-                "Command Line Interface": [
-                    "reference/cli/basic",
-                    "reference/cli/instance",
-                    "reference/cli/project",
-                    "reference/cli/dataset",
-                    "reference/cli/model",
-                    "reference/cli/runtime",
-                    "reference/cli/eval",
-                    "reference/cli/utilities"],
+                "Starwhale Command Line Interface (SWCLI)": [
+                    "references/swcli/basic",
+                    "references/swcli/instance",
+                    "references/swcli/project",
+                    "references/swcli/dataset",
+                    "references/swcli/model",
+                    "references/swcli/runtime",
+                    "references/swcli/eval",
+                    "references/swcli/utilities"],
                 "Python SDK": [
-                    "reference/sdk/overview",
-                    "reference/sdk/data_type",
-                    "reference/sdk/dataset",
-                    "reference/sdk/evaluation",
-                    "reference/sdk/other",
+                    "references/sdk/data_type",
+                    "references/sdk/dataset",
+                    "references/sdk/evaluation",
+                    "references/sdk/other",
                 ],
             },
             "Community": [
